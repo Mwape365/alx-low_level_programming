@@ -10,15 +10,20 @@
 
 void reverse_array(int *a, int n)
 {
-	int i = 0, t;
+	int *p, i, aux, k;
 
-	n = n - i;
-	while (i < n)
+	p = a;
+
+	for (i = 1; i < n; i++)
 	{
-		t = *(a + i);
-		*(a + i) = *(a + n);
-		*(a + n) = t;
-		i++;
-		n--;
+		p++;
+	}
+
+	for (k = 0; k < i / 2; k++)
+	{
+		aux = a[k];
+		a[k] = *p;
+		*p = aux;
+		p--;
 	}
 }
