@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
  * string_nconcat - Function concatenates two strings
- * s1: First string
- * s2: Second string
+ * @s1: First String
+ * @s2: Second String
  * @n: maximum number of bytes in a string
  *
  * Return: NULL if function fails
