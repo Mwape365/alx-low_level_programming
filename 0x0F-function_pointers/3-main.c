@@ -5,12 +5,11 @@
 /**
  * main - main function
  *
- * @argc: Arguments
- * @argv: Pointers to arguments
+ * @argc: numero de argumentos
+ * @argv: parametros
  *
- * Return: 0
+ * Return: result of the operation selected
  */
-
 int main(int argc, char *argv[])
 {
 	int result;
