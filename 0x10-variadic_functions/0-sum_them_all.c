@@ -7,7 +7,7 @@
  * the sum of all its parameters
  * @n: variables
  *
- * Return: 0
+ * Return: sum
  */
 
 int sum_them_all(const unsigned int n, ...)
@@ -27,5 +27,5 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_end(valist);
 
-	return (0);
+	return (sum);
 }
