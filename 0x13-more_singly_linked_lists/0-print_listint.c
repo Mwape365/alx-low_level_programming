@@ -6,22 +6,19 @@
  *
  * @h: Parameter Pointer to the head of the linked list
  *
- * Return: the number of nodes
+ * Return: number of nodes
  */
 
 size_t print_listint(const listint_t *h)
 {
-	size_t n = 0;
+	size_t nodes = 0;
 
-	if (h == NULL)
+	while (h)
 	{
-		return (0);
-	}
-	while (h != NULL)
-	{
-		printf("%i\n", h->n);
+		nodes++;
+		printf("%d\n", h->n);
 		h = h->next;
-		n++;
 	}
-	return (n);
+
+	return (nodes);
 }
